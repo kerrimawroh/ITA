@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item-details {
+    flex-grow: 1;
+}
+
+.dish-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+.description {
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.price {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.review-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.review-button:hover {
+    background-color: #2980b9;
+}
+
+.reviews-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.review-item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.rating {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.review-text {
+    color: #555;
+}
+
+.no-reviews {
+    color: #999;
+}
+
+.add-review-form {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.add-review-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.add-review-form select,
+.add-review-form textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.add-review-form button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.add-review-form button:hover {
+    background-color: #219653;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+}
