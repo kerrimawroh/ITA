@@ -23,21 +23,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->bindParam(':review_text', $reviewText, PDO::PARAM_STR);
             $stmt->execute();
             $success = "Thank you for your review!";
-             header("Location: thankyou.php?success=" . urlencode($success)); // Redirect to thankyou.php
+            header("Location: thankyou.php?success=" . urlencode($success)); // Redirect to thankyou.php
             exit();
 
         } catch (PDOException $e) {
             $error = "Error submitting review: " . $e->getMessage();
-             header("Location: thankyou.php?error=" . urlencode($error)); //send the error
+            header("Location: thankyou.php?error=" . urlencode($error)); //send the error
             exit();
         }
     } else {
         $error = "Invalid input. Please ensure you select a rating and provide a review.";
-         header("Location: thankyou.php?error=" . urlencode($error)); //send the error
+        header("Location: thankyou.php?error=" . urlencode($error)); //send the error
         exit();
     }
-} else{
-     header("Location: thankyou.php"); //if it is not a post.
-     exit();
+} else {
+    header("Location: thankyou.php"); //if it is not a post.  Important for security and preventing unexpected behavior.
+    exit();
 }
 ?>

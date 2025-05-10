@@ -2,7 +2,7 @@
 require 'db.php';
 
 try {
-    $stmt = $pdo->query("SELECT * FROM menu");
+    $stmt = $pdo->query("SELECT * FROM breakfast");
     $menuItems = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     if (empty($menuItems)): ?>

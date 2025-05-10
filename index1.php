@@ -9,9 +9,7 @@
 <body>
     <div class="container">
         <h1>Today's Canteen Menu</h1>
-        <section id="menu">
-            <?php include 'welcome.html'; ?>
-        </section>
+      
 
         <section id="reviews">
             <?php

@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #b3d4fc, #7aaedb, #507fc3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .welcome-container {
+    text-align: center;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 20px;
+    background: linear-gradient(135deg, #f0f8ff, #a1c6ea);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .vertical-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .carousel-item {
+    background-color: white;
+    padding: 15px 40px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
+    transform: scale(1);
+  }
+  
+  .carousel-item:hover {
+    transform: scale(1.2);
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+    z-index: 2;
+  }
+  
+  /* Link styling */
+  a {
+    text-decoration: none;
+    color: #3498db;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
